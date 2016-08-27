@@ -22,13 +22,3 @@ def get_sum(a, b)
   end
 
 end
-
-# get_sum(9, 3)
-# get_sum(9, 0)
-get_sum(0, 9)
-get_sum(1, -1)
-# get_sum(2, -2)
-get_sum(-14, 16)
-get_sum(-12, -8)
-# get_sum(-2, -1)
-# get_sum(-2, 0)

@@ -14,9 +14,3 @@ def first_uniq_char(s)
   end
   return result
 end
-
-first_uniq_char "leetcode"
-first_uniq_char "loveleetcode"
-first_uniq_char "dddccdbba"
-first_uniq_char ""
-first_uniq_char "cc"

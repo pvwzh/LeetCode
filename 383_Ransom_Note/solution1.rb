@@ -20,10 +20,3 @@ def can_construct(ransom_note, magazine)
     return false
   end
 end
-
-# can_construct("", "") # true
-# can_construct("", "a") # true
-# can_construct("a", "b") # false
-# can_construct("aa", "ab") # false
-# can_construct("aa", "aab") # true
-# can_construct("bjaajgea", "affhiiicabhbdchbidghccijjbfjfhjeddgggbajhidhjchiedhdibgeaecffbbbefiabjdhggihccec")
