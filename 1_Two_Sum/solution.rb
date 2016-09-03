@@ -12,8 +12,3 @@ def two_sum(nums, target)
     hash[num] = index
   end
 end
-
-
-nums = [3,2,4]
-target = 6
-two_sum(nums, target)
