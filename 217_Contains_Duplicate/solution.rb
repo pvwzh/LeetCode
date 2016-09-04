@@ -1,5 +1,7 @@
 # @param {Integer[]} nums
 # @return {Boolean}
+
+# solution1
 def contains_duplicate(nums)
   hash = Hash.new(0)
   for num in nums
@@ -12,10 +14,7 @@ def contains_duplicate(nums)
   return false
 end
 
-
-nums = [2]
-if contains_duplicate(nums)
-  p true
-else
-  p false
+# solution2
+def contains_duplicate2(nums)
+  return nums.length == nums.uniq.length ? false : true
 end
