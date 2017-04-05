@@ -14,20 +14,31 @@ class Solution(object):
         :rtype: ListNode
         """
         if head:
+            dic = {}
+            next_node = head.next
+            dic[head.val] = 1
+            while next_node:
+                key = next_node.val
+                dic[key] = dic.get(key, 0) + 1
+                next_node = next_node.next
+
+            start_node = ListNode(None)
+            start_node.next = head
+
+            pre_node = start_node
             cur_node = head
             next_node = cur_node.next
-
-            while next_node:
-                cur_val = cur_node.val
-                next_val = next_node.val
-
-                if next_val == cur_val:
-                    next_node = next_node.next
-                    cur_node.next = next_node
+            while cur_node:
+                key = cur_node.val
+                if dic[key] > 1:
+                    pre_node.next = cur_node.next
                 else:
-                    cur_node = next_node
-                    next_node = next_node.next
+                    pre_node = cur_node
 
+                cur_node = next_node
+                if cur_node:
+                    next_node = cur_node.next
+            return start_node.next
         return head
 
 
